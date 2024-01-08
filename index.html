@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="joker-container.css" />
+    <script defer src="app.js"></script>
+
+    <title>Joker</title>
+  </head>
+  <body>
+    <form class="modal hidden">
+      <img class="logo" src="joker.png" />
+      <div class="select-container container">
+        <h2>Category?</h2>
+        <select name="select" class="custom-select">
+          <option value="programming">Programming</option>
+          <option value="Misc">Misc</option>
+          <option value="Any">Any</option>
+          <option value="Spooky">Spooky</option>
+          <option value="Christmas">Christmas</option>
+          <option value="Pun">Pun</option>
+          <option value="Dark">Dark</option>
+        </select>
+      </div>
+
+      <div class="amount-container container">
+        <h2>Amount of jokes</h2>
+        <input
+          type="number"
+          max="9"
+          min="1"
+          placeholder="max: 9"
+          name="amount"
+          id="amount"
+          value="1"
+          class="modern-input"
+        />
+      </div>
+
+      <div class="container">
+        <h2>Filter</h2>
+        <div class="filter-container">
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            name="racist_flag"
+            id="Racist"
+          />
+          <label for="Racist"></label>
+
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            name="sexist_flag"
+            id="Sexist"
+          />
+          <label for="Sexist"></label>
+
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            name="political_flag"
+            id="Political"
+          />
+          <label for="Political"></label>
+
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            name="religious_flag"
+            id="Religious"
+          />
+          <label for="Religious"></label>
+
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            name="nsfw_flag"
+            id="NSFW"
+          />
+          <label for="NSFW"></label>
+
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            name="explicit_flag"
+            id="Explicit"
+          />
+          <label for="Explicit"></label>
+        </div>
+      </div>
+
+      <div class="type-container container">
+        <h2>Type</h2>
+        <input
+          class="styled-checkbox"
+          type="checkbox"
+          name="single_type"
+          id="single"
+        />
+        <label for="single"></label>
+        <input
+          class="styled-checkbox"
+          type="checkbox"
+          name="twopart_type"
+          id="twopart"
+        />
+        <label for="twopart"></label>
+      </div>
+      <button class="get_jokes">Get jokes</button>
+    </form>
+    <nav><button class="joker">JOKER</button></nav>
+    <div class="main"></div>
+  </body>
+</html>
