@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="joker-container.css" />
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/joker-container.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/modalView.js"></script>
 
-    <title>Joker</title>
+    <title>Joker App</title>
   </head>
   <body>
     <form class="modal hidden">
-      <img class="logo" src="joker.png" />
+      <img class="close-modal-btn" src="imgs/delete.png" alt="" />
+      <img class="logo" src="./imgs/joker.png" />
       <div class="select-container container">
         <h2>Category?</h2>
         <select name="select" class="custom-select">
@@ -111,7 +113,11 @@
       </div>
       <button class="get_jokes">Get jokes</button>
     </form>
-    <nav><button class="joker">JOKER</button></nav>
+    <nav>
+      <button class="joker">
+        <img class="logo-nav" src="./imgs/joker.png" alt="" />
+      </button>
+    </nav>
     <div class="main"></div>
   </body>
 </html>

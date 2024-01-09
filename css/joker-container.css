@@ -8,6 +8,7 @@
   padding: 2rem 2rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   font-size: 2rem;
+  border-radius: 1rem;
 }
 
 .joke-container > div:nth-child(2) {
