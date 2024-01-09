@@ -29,7 +29,7 @@ const getJoke = async function (link) {
 
     if (data.error === true)
       throw new Error(
-        "<div class='error'><img class='error-icon' src='./css/warning.png'/> <h2>Could not find any jokes under the given filters </h2></div>"
+        "<div class='error'><img class='error-icon' src='./imgs/warning.png'/> <h2>Could not find any jokes under the given filters </h2></div>"
       );
     else if (!data.jokes && !data.joke)
       //prettier-ignore
