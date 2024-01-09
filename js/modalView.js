@@ -36,6 +36,7 @@ getJokeBtn.addEventListener("click", async function (e) {
   await getJoke(getLink());
   toggleModal();
   unblurBackground();
+  document.removeEventListener("click", closeModalOnClickOutside);
 });
 
 closeModalBtn.addEventListener("click", function () {
